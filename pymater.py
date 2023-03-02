@@ -1,6 +1,7 @@
 import time
 import os
 import winsound
+from colorama import Fore, Back, Style
 
 
 def convert(t):
@@ -10,7 +11,7 @@ def convert(t):
 def counttimer(t, label):
     while t:
         min, sec = divmod(t,60)
-        print(f"{label}: {min:02d}:{sec:02d}", end="\r")
+        print(Style.BRIGHT + Fore.GREEN+f"{label}: " + Style.NORMAL + f"{min:02d}:{sec:02d}", end="\r")
         time.sleep(1)
         t -= 1 
 
