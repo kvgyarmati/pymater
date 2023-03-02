@@ -1,8 +1,6 @@
 import time
 import os
-
-
-
+import winsound
 
 
 def convert(t):
@@ -21,12 +19,14 @@ def pomodoro(work, rest):
     # setting minutes to seconds 
     w = convert(work)
     r = convert(break_time)
+    os.system("clear||cls")
+    winsound.Beep(440, 500)
     counttimer(w, "Work")
     os.system("clear||cls")
+    winsound.Beep(440, 500)
+    winsound.Beep(440, 500)
     counttimer(r, "Break_time") 
     os.system("clear||cls")
-
-
 
 
 work = int(input("Enter work time, in min: ")) 
