@@ -1,4 +1,8 @@
 """
+
+Skip fill GPLv3 lines to code by jumping to line #684
+
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
