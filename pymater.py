@@ -705,6 +705,10 @@ def counttimer(t, label):
         time.sleep(1)
         t -= 1
 
+# ** TO DO: #2 - graceful quit 
+
+# ** TO DO: #3 - default - both work an break ; one or the other ; include pause instead of direct run into break at the completion of work timer.
+
 
 def pomodoro(work, rest): 
     # setting minutes to seconds 
